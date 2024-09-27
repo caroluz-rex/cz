@@ -54,10 +54,10 @@ function generateArrows(num) {
     const arrows = [];
     const signs = ['+10%', '+20%', '+50%', '+100%'];
     for (let i = 0; i < num; i++) {
-        const size = Math.random() * 20 + 20; // Base size
+        const size = Math.random() * 20 + 40; // Base size
         const left = Math.random() * 100;
         const duration = Math.random() * 5 + 5;
-        const delay = Math.random() * 5;
+        const delay = Math.random() * 4;
         const sign = signs[Math.floor(Math.random() * signs.length)];
         arrows.push(
             <Arrow
